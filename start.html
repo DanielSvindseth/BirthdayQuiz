@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gratulerer Med Dagen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Gratulerer Med Dagen Adrian!</h1>
+    <div class="center">
+      <h3>Løys gåtene for å finne løysingsordet. <br> Skriv deretter inn ordet i boksa under og klikk på knappen for å sjå om det var rett. <br> Kvar oppgåve vil gje deg ein bokstav eller eit tal som svar. Fyll inn bokstavane i same rekkefølge som oppgåvene er opplista. <br> Alle bokstavane skal vere små :) </h3>
+      <br>
+      <ul>
+        <li>1. Første bokstav i verdas mest solgte spel</li>
+        <li>2. Siste bokstav i namnet på landet i verda med størst areal</li>
+        <li>3. Første bokstav i desserttypen vi skal ete i dag</li>
+        <li>4. Kva bokstav byrjar flest verdsdelar på?</li>
+        <li>5. Midt imellom Q og S</li>
+        <li>6. Første bokstav i namn på viktig pizzatopping</li>
+        <li>7. Første bokstav i verdas lengste elv</li>
+        <li>8. 'Eg' på engelsk</li>
+        <li>9. 2×3+4(9√(16))</li>
+        <li>10. 1×1×1×1×1×1×1×1×0</li>
+
+      </ul>
+
+      <div class="input-field">
+        <input id="answer-box" class="input" type="text" name="answer" value="" placeholder="Skriv løysingsordet her"><!--
+     --><button onclick="checkAnswer();">Sjekk</button>
+      </div>
+
+    </div>
+
+  </body>
+  <script>
+    function checkAnswer() {
+      var answer = document.getElementById('answer-box').value;
+      if (answer !== 'makaroni1500') {
+        alert('Hmmm, noko var feil. Prøv igjen :)')
+      } else if (answer == 'makaroni1500') {
+        location.href='gave.html'
+      }
+    }
+  </script>
+  <style>
+    * { padding: 0; margin: 0; border: 0; color: white; line-height: 1.5; font-family: 'Comic Neue', cursive; font-size: 20px; }
+    html { background-color: #f78; }
+    h1 {
+      font-size: 72px;
+      background: -webkit-linear-gradient(left, #03b515, #0668e8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      padding-top: 20px; }
+    .center {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
+    .input {
+      height: 60px;
+      width: 300px;
+      color: #222;
+      padding-left: 40px;
+      vertical-align: middle;
+    }
+    .input-field {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+    }
+    button {
+      height: 60px;
+      width: 120px;
+      background-color: #90c;
+      color: white;
+      font-size: 30px;
+      vertical-align: middle; }
+    button:hover {
+      background-color: #70c;
+    }
+    button:active {
+      background-color: #90a;
+    }
+    ul {
+      list-style-type: none;
+    }
+
+  </style>
+</html>
