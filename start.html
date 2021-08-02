@@ -10,17 +10,17 @@
     <div class="center">
       <h3>Løys gåtene for å finne løysingsordet. <br> Skriv deretter inn ordet i boksa under og klikk på knappen for å sjå om det var rett. <br> Kvar oppgåve vil gje deg ein bokstav eller eit tal som svar. Fyll inn bokstavane i same rekkefølge som oppgåvene er opplista. <br> Alle bokstavane skal vere små :) <br> Hugs at alle hjelpemiddel er lov ;) </h3>
       <br>
-      <ul>
+      <ul class="list">
         <li>1. Fyrste bokstav i årets OL-by</li>
-        <li>2. (r) </li>
+        <li>2. Tredje bokstav under tyttebærsylta</li>
         <li>3. あ</li>
-        <li>4. (n) </li>
+        <li>4. Siste bokstav i det norske namnet på blomsten "Taraxacum officinale"</li>
         <li>5. Siste bokstav i det mest brukte ordet i Engelsk</li>
         <li>6. -727 52 -78</li>
         <li>7. a + e</li>
         <li>8. Fyrste bokstav i fargen #fc2d8a</li>
-        <li>9. (9) </li>
-        <li>10. (0) </li>
+        <li>9. Sjette bokstav i namnet til landet her: <br><img src="flag.svg" height="100px"> </li>
+        <li>10. Fyrste bokstav i det finske namnet for Finland</li>
 
       </ul>
 
@@ -35,16 +35,16 @@
   <script>
     function checkAnswer() {
       var answer = document.getElementById('answer-box').value;
-      if (answer !== 'tranebær90') {
+      if (answer !== 'tranebæris') {
         alert('Hmmm, noko var feil. Prøv igjen :)')
-      } else if (answer == 'tranebær90') {
+      } else if (answer == 'tranebæris') {
         location.href='gave.html'
       }
     }
   </script>
   <style>
-    * { padding: 0; margin: 0; border: 0; color: white; line-height: 1.5; font-family: 'Comic Neue', cursive; font-size: 20px; }
-    html { background-color: #19a301; }
+    * { padding: 0; margin: 0; border: 0; color: black; line-height: 1.5; font-family: 'Comic Neue', cursive; font-size: 20px; }
+    html { background-color: #bdfc8d; }
     h1 {
       font-size: 72px;
       background: -webkit-linear-gradient(left, #ef742d, #ffaabb);
@@ -54,7 +54,11 @@
       /*text-shadow: 0px 0px 2px #fff3;*/
       padding-top: 20px; }
     .center {
-      width: 1000px;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto; }
+    .list {
+      width: max-content;
       margin-left: auto;
       margin-right: auto; }
     .input {
@@ -62,6 +66,8 @@
       width: 300px;
       color: #222;
       padding-left: 40px;
+      margin-bottom: 8px;
+      box-shadow: 4px 4px #542b13;
       vertical-align: middle;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -79,6 +85,8 @@
       color: white;
       font-size: 30px;
       vertical-align: middle;
+      margin-bottom: 8px;
+      box-shadow: 4px 4px #542b13;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px; }
     button:hover {
@@ -86,6 +94,10 @@
     }
     button:active {
       background-color: #ee732c;
+      box-shadow: none;
+      margin-left: 4px;
+      margin-top: 4px;
+      margin-bottom: 4px;
     }
     ul {
       list-style-type: none;
